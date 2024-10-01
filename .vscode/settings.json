@@ -1,25 +1,66 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit",
-    "source.fixAll": "always",
-    "source.organizeImports": "always"
-  },
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 80,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.addMissingImports": "explicit",
+		"source.fixAll": "always",
+		"source.organizeImports": "always"
+	},
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 80,
 
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": true,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "all",
-  "prettier.arrowParens": "always",
-  "prettier.bracketSpacing": true,
-  "prettier.endOfLine": "lf",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.trailingComma": "all",
+	"prettier.arrowParens": "always",
+	"prettier.bracketSpacing": true,
+	"prettier.endOfLine": "lf",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
+
+// {
+// 	"workbench.colorTheme": "One Dark Pro",
+// 	"editor.tabSize": 2,
+// 	"workbench.iconTheme": "material-icon-theme",
+// 	"oneDarkPro.editorTheme": "One Dark Pro Flat",
+// 	"editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+// 	"editor.fontSize": 12,
+// 	"editor.fontLigatures": false,
+// 	"editor.letterSpacing": 0.5,
+// 	"editor.smoothScrolling": true,
+// 	"editor.fontWeight": "700",
+// 	"editor.lineHeight": 18,
+// 	"git.autofetch": true,
+
+// 	// best practice setup for eslint and prettier
+// 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+// 	"editor.formatOnSave": true,
+// 	"editor.codeActionsOnSave": {
+// 		"source.fixAll.eslint": "explicit",
+// 		"source.addMissingImports": "explicit",
+// 		"source.fixAll": "always",
+// 		"source.organizeImports": "always"
+// 	},
+// 	"editor.wordWrap": "wordWrapColumn",
+// 	"editor.wordWrapColumn": 80,
+
+// 	"prettier.tabWidth": 2,
+// 	"prettier.useTabs": true,
+// 	"prettier.semi": true,
+// 	"prettier.singleQuote": false,
+// 	"prettier.jsxSingleQuote": false,
+// 	"prettier.trailingComma": "all",
+// 	"prettier.arrowParens": "always",
+// 	"prettier.bracketSpacing": true,
+// 	"prettier.endOfLine": "lf",
+// 	"[typescriptreact]": {
+// 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+// 	},
+// 	"git.confirmSync": false
+// }
