@@ -3,8 +3,13 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
+    "source.addMissingImports": "explicit",
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
   },
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+
   "prettier.tabWidth": 2,
   "prettier.useTabs": true,
   "prettier.semi": true,
