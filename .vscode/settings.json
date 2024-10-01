@@ -6,12 +6,14 @@
     "source.addMissingImports": "explicit"
   },
   "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
+  "prettier.useTabs": true,
   "prettier.semi": true,
   "prettier.singleQuote": false,
   "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "es5",
+  "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.endOfLine": "lf",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
