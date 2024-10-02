@@ -24,13 +24,13 @@
 	}
 }
 
-// {
-// 	"workbench.colorTheme": "One Dark Pro",
+{
+// 	"workbench.colorTheme": "One Dark Pro Flat",
 // 	"editor.tabSize": 2,
 // 	"workbench.iconTheme": "material-icon-theme",
 // 	"oneDarkPro.editorTheme": "One Dark Pro Flat",
 // 	"editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-// 	"editor.fontSize": 12,
+// 	"editor.fontSize": 14,
 // 	"editor.fontLigatures": false,
 // 	"editor.letterSpacing": 0.5,
 // 	"editor.smoothScrolling": true,
@@ -62,5 +62,32 @@
 // 	"[typescriptreact]": {
 // 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 // 	},
-// 	"git.confirmSync": false
+// 	"git.confirmSync": false,
+// 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+// 	"terminal.integrated.fontWeight": "bold",
+// 	"terminal.integrated.fontSize": 14,
+// 	"terminal.integrated.letterSpacing": 1,
+// 	"workbench.colorCustomizations": {
+// 		"terminal.background": "#282c34",
+// 		"terminal.foreground": "#b9b5b5",
+// 		"terminalCursor.background": "#D0D0D0",
+// 		"terminalCursor.foreground": "#D0D0D0",
+// 		"terminal.ansiBlack": "#000000",
+// 		"terminal.ansiBlue": "#0066FF",
+// 		"terminal.ansiBrightBlack": "#808080",
+// 		"terminal.ansiBrightBlue": "#0066FF",
+// 		"terminal.ansiBrightCyan": "#00FFFF",
+// 		"terminal.ansiBrightGreen": "#33FF00",
+// 		"terminal.ansiBrightMagenta": "#CC00FF",
+// 		"terminal.ansiBrightRed": "#FF0000",
+// 		"terminal.ansiBrightWhite": "#FFFFFF",
+// 		"terminal.ansiBrightYellow": "#FF0099",
+// 		"terminal.ansiCyan": "#00FFFF",
+// 		"terminal.ansiGreen": "#33FF00",
+// 		"terminal.ansiMagenta": "#CC00FF",
+// 		"terminal.ansiRed": "#FF0000",
+// 		"terminal.ansiWhite": "#D0D0D0",
+// 		"terminal.ansiYellow": "#FF0099"
+// 	}
 // }
+
