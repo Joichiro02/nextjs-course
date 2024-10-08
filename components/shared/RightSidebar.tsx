@@ -4,32 +4,32 @@ import RenderTag from "./RenderTag";
 
 const hotQuestions = [
 	{
-		_id: 1,
+		_id: "1",
 		title: "What is the best way to learn React?",
 		answers: 10,
 	},
 	{
-		_id: 2,
+		_id: "2",
 		title: "How to become a full-stack developer?",
 		answers: 5,
 	},
 	{
-		_id: 3,
+		_id: "3",
 		title: "What is the best way to learn React?",
 		answers: 10,
 	},
 	{
-		_id: 4,
+		_id: "4",
 		title: "How to become a full-stack developer?",
 		answers: 5,
 	},
 	{
-		_id: 5,
+		_id: "5",
 		title: "What is the best way to learn React?",
 		answers: 10,
 	},
 	{
-		_id: 6,
+		_id: "6",
 		title: "How to become a full-stack developer?",
 		answers: 5,
 	},
@@ -37,32 +37,32 @@ const hotQuestions = [
 
 const populartaTags = [
 	{
-		_id: 1,
+		_id: "1",
 		name: "React",
 		totalQuestions: 10,
 	},
 	{
-		_id: 2,
+		_id: "2",
 		name: "JavaScript",
 		totalQuestions: 5,
 	},
 	{
-		_id: 3,
+		_id: "3",
 		name: "Node.js",
 		totalQuestions: 10,
 	},
 	{
-		_id: 4,
+		_id: "4",
 		name: "TypeScript",
 		totalQuestions: 5,
 	},
 	{
-		_id: 5,
+		_id: "5",
 		name: "GraphQL",
 		totalQuestions: 10,
 	},
 	{
-		_id: 6,
+		_id: "6",
 		name: "MongoDB",
 		totalQuestions: 5,
 	},
