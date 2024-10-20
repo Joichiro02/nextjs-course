@@ -34,7 +34,7 @@ export default function Question({ mongoUserId }: QuestionProps) {
 	const editorRef = useRef<TinyMCEEditor | null>(null);
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const router = useRouter();
-	const path = usePathname();
+	const pathname = usePathname();
 
 	// 1. Define your form.
 	const form = useForm<z.infer<typeof QuestionsSchema>>({
@@ -57,6 +57,7 @@ export default function Question({ mongoUserId }: QuestionProps) {
 				content: values.explanation,
 				tags: values.tags,
 				author: JSON.parse(mongoUserId),
+				path: pathname,
 			});
 
 			// navigate to home page
