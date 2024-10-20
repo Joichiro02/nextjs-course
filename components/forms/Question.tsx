@@ -17,16 +17,24 @@ import {
 	FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { createQuestion } from "@/lib/actions/question.action";
 import { QuestionsSchema } from "@/lib/validation";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { Editor as TinyMCEEditor } from "tinymce";
 import { Badge } from "../ui/badge";
 
-const type: any = "create";
+const type: string = "create";
 
-export default function Question() {
+interface QuestionProps {
+	mongoUserId: string;
+}
+
+export default function Question({ mongoUserId }: QuestionProps) {
 	const editorRef = useRef<TinyMCEEditor | null>(null);
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const router = useRouter();
+	const path = usePathname();
 
 	// 1. Define your form.
 	const form = useForm<z.infer<typeof QuestionsSchema>>({
@@ -39,13 +47,22 @@ export default function Question() {
 	});
 
 	// 2. Define a submit handler.
-	function onSubmit(values: z.infer<typeof QuestionsSchema>) {
+	async function onSubmit(values: z.infer<typeof QuestionsSchema>) {
 		setIsSubmitting(true);
 		try {
 			// make an async call for your API -> create a question
 			// contain all form data
+			await createQuestion({
+				title: values.title,
+				content: values.explanation,
+				tags: values.tags,
+				author: JSON.parse(mongoUserId),
+			});
+
 			// navigate to home page
+			router.push("/");
 		} catch (error) {
+			console.log(error);
 		} finally {
 			setIsSubmitting(false);
 		}
@@ -53,7 +70,7 @@ export default function Question() {
 
 	const handleInputKeyDown = (
 		e: React.KeyboardEvent<HTMLInputElement>,
-		field: any,
+		field: { name: string; value: string[] },
 	) => {
 		if (e.key === "Enter" && field.name === "tags") {
 			e.preventDefault();
@@ -80,7 +97,7 @@ export default function Question() {
 		}
 	};
 
-	const handleTagRemove = (tag: string, field: any) => {
+	const handleTagRemove = (tag: string, field: { value: string[] }) => {
 		const newTags = field.value.filter((t: string) => t !== tag);
 		form.setValue("tags", newTags);
 	};
@@ -130,6 +147,8 @@ export default function Question() {
 									onInit={(_evt, editor) => {
 										editorRef.current = editor;
 									}}
+									onBlur={field.onBlur}
+									onEditorChange={(content) => field.onChange(content)}
 									initialValue=""
 									init={{
 										height: 350,
@@ -186,7 +205,7 @@ export default function Question() {
 									/>
 									{field.value.length > 0 && (
 										<div className="flex-start mt-2.5 gap-2.5">
-											{field.value.map((tag: any) => (
+											{field.value.map((tag: string) => (
 												<Badge
 													key={tag}
 													className="subtle-medium background-light800_dark300 text-light400_light500 flex items-center justify-center gap-2 rounded-md border-none px-4 py-2 capitalize"
